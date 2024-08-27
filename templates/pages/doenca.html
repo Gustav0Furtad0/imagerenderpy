@@ -5,37 +5,41 @@
         <div class="container">
             <div class="titulo">
                 <h2>{{ doenca.doenca }}</h2>
-                <hr/> <!-- Adicione um elemento pai, por exemplo, uma div -->
+                <hr/>
             </div>
             <div class="conteudo-container">
                 <div class="coteudo-left">
-                    {% if doenca.topicos %}
-                        {% for topico in doenca.topicos %}
-                            {% if topico.list %}
-                                <div class="texto mg-bottom">
-                                    <h3>{{ topico.titulo }}</h3>
-                                    <ul>
-                                        {% for item in topico.texto %}
-                                            <li>{{ item }}</li>
+                    {% if doenca.conteudo %}
+                        {% for conteudo_obj in doenca.conteudo %}
+                            {% if conteudo_obj.tipo == 'secao' %}
+                                <div class="sessao">
+                                    <h2 class="sessao-titulo">{{ conteudo_obj.titulo }}</h2>
+                                    {% if conteudo_obj.texto %}
+                                        {% for texto_obj in conteudo_obj.texto %}
+                                            {% if texto_obj.tipo == 'texto' %}
+                                                <p class="sessao-texto">{{ texto_obj.conteudo }}</p>
+                                            {% elif texto_obj.tipo == 'lista' %}
+                                                <ul class="sessao-lista">
+                                                    {% for texto in texto_obj.conteudo %}
+                                                        <li>{{ texto }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
                                         {% endfor %}
-                                    </ul>
-                                </div>
-                            {% else %}
-                                <div class="texto mg-bottom">
-                                    <h3>{{ topico.titulo }}</h3>
-                                    {% for item in topico.texto %}
-                                        <p>{{ item }}</p>
-                                    {% endfor %}
-                                </div>
+                                    {% endif %}
+                                    </div>
                             {% endif %}
                         {% endfor %}
                     {% endif %}
                     {% if doenca.imagens %}
                         {% for imagem in doenca.imagens %}
                             {% if imagem.legenda %}
-                                <div class="texto mg-bottom">
-                                    <h3>Legenda: {{ imagem.titulo }}</h3>
-                                    <ul>
+                                <div class="sessao">
+                                    <h3 class="sessao-titulo">Legenda: {{ imagem.titulo }}</h2>
+                                    <ul 
+                                        class="sessao-lista"
+                                        style="list-style-type: none;"
+                                    >
                                         {% for chave, valor in imagem.legenda.items() %}
                                             <li>
                                                 <svg width="20" height="20">
@@ -54,7 +58,17 @@
                     {% if doenca.imagens %}
                         {% for imagem in imagens_base64 %}
                         <div class="imagem mg-bottom patoimage">
-                            <img now="0" src="data:image/jpeg;base64, {{ imagem[0] }}" onclick="changeImage(this, ['data:image/jpeg;base64, {{ imagem[0] }}', 'data:image/jpeg;base64, {{ imagem[1] }}'])">
+                            {% if imagem[2] %}
+                            <div class="title-overlay">{{ imagem[2] }}</div>
+                            {% endif %}
+                            <img 
+                                now="0" 
+                                src="data:image/jpeg;base64, {{ imagem[0] }}" 
+                                onclick="changeImage(this, ['data:image/jpeg;base64, {{ imagem[0] }}', 'data:image/jpeg;base64, {{ imagem[1] }}'])"
+                            >
+                            {% if imagem[3] %}
+                            <span class="image-caption">{{ imagem[3] }}</span>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     {% endif %}

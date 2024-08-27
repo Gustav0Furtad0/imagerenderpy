@@ -1,0 +1,48 @@
+{
+    "doenca": "CISTO DENTÍGERO",
+    "imagens": [
+        {   
+            "titulo": "Fotomicrografia 1",
+            "arquivo": ["Cisto-dentigero-1.png", "Cisto-dentigero-1-p.png"],
+            "legenda": {
+                "767dd6": "Cavidade cística.",
+                "4a9c66": "Cápsula cística.",
+                "10dfce": "Área com presença de infiltrado inflamatório.",
+                "ff0000": "Focos de hemorragia."
+            },
+            "titulo-visivel": "Fotomicrografia 1: menor aumento"
+        },
+        {   
+            "titulo": "Fotomicrografia 2",
+            "arquivo": ["Cisto-dentigero-2.png", "Cisto-dentigero-2-p.png"],
+            "legenda": {
+                "a200ff": "Tecido epitelial pavimentoso estratificado.",
+                "ffba00": "Tecido conjuntivo denso, com algumas áreas mais celularizadas e outras mais colagenizadas.",
+                "ff0000": "Focos de hemorragia intersticial."
+            },
+            "titulo-visivel": "Fotomicrografia 2: maior aumento"
+        }
+    ],
+    "conteudo": [
+        {
+            "tipo": "secao",
+            "titulo": "Introdução",
+            "texto": [ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "O cisto dentígero é um tipo comum de cisto odontogênico que se origina da separação do folículo ao redor da coroa de um dente não erupcionado, representando cerca de 20% dos cistos odontogênicos. Este cisto está localizado ao redor da coroa de um dente incluso e se adere à sua junção amelocementária. Sua patogênese é incerta, mas acredita-se que seja causado pelo acúmulo de fluido entre o epitélio reduzido do esmalte e a coroa do dente. Embora a maioria dos cistos dentígeros sejam de origem desenvolvimental, alguns podem ter uma patogênese inflamatória. Em alguns casos, o cisto pode se formar ao redor da coroa de um dente permanente não erupcionado devido à inflamação de um dente decíduo subjacente (NEVILLE et al., 2016)."
+                }
+            ]
+        },
+        {
+            "tipo": "secao",
+            "titulo": "Características Histopatológicas",
+            "texto":[ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "As características histopatológicas dos cistos dentígeros variam conforme o estado inflamatório do cisto. Em cistos dentígeros não inflamados, a parede cística é composta por tecido conjuntivo fibroso frouxo, rico em glicosaminoglicanos. Pode haver pequenas ilhas ou cordões de restos epiteliais odontogênicos inativos na cápsula fibrosa, que, quando numerosos, podem ser confundidos com ameloblastomas por patologistas não familiarizados com lesões orais. O revestimento epitelial é formado por duas a quatro camadas de células achatadas não queratinizadas, com uma interface plana entre o epitélio e o tecido conjuntivo. Já em cistos dentígeros inflamados, que são mais comuns, a parede cística apresenta um aumento no colágeno e infiltrado de inflamação crônica. O epitélio pode mostrar hiperplasia variável, com cristas epiteliais e características escamosas mais pronunciadas. Às vezes, a superfície pode ser queratinizada, o que deve ser diferenciado do queratocisto. Além disso, podem ser observadas áreas focais de células mucosas na camada epitelial, embora células colunares ciliadas sejam raras. Pequenos ninhos de células sebáceas podem ocorrer raramente na parede cística, sugerindo a multipotencialidade do revestimento epitelial odontogênico em um cisto dentígero (NEVILLE et al., 2016)"
+                }
+            ]
+        }
+    ]
+}

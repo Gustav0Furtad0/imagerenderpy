@@ -1,0 +1,92 @@
+{
+    "doenca": "LEUCOPLASIA",
+    "imagens": [
+        {   
+            "titulo": "Fotomicrografia 1",
+            "arquivo": ["Leucoplasia-1.png", "Leucoplasia-1-p.png"],
+            "legenda": {
+                "a200ff": "Tecido epitelial pavimentoso estratificado hiperqueratinizado e discretamente acantótico.",
+                "5c098b": "Cristas epiteliais bulbosas.",
+                "00ff00": "Camada de queratina.",
+                "ffba00": "Tecido conjuntivo denso.",
+                "ff0000": "Fascículos de fibras musculares estriadas esqueléticas."
+            },
+            "titulo-visivel": "Fotomicrografia 1: menor aumento"
+        },
+        {   
+            "titulo": "Fotomicrografia 2",
+            "arquivo": ["Leucoplasia-2.png", "Leucoplasia-2-p.png"],
+            "legenda": {
+                "a200ff": "Tecido epitelial pavimentoso estratificado hiperqueratinizado e discretamente acantótico.",
+                "00ff00": "Camada de queratina.",
+                "ffba00": "Tecido conjuntivo denso.",
+                "0b6613": "Disqueratose."
+            },
+            "titulo-visivel": "Fotomicrografia 2: maior aumento"
+        }
+    ],
+    "conteudo": [
+        {
+            "tipo": "secao",
+            "titulo": "Introdução",
+            "texto": [ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "A leucoplasia, segundo a OMS, é definida como uma mancha ou placa branca na mucosa oral que não pode ser diagnosticada como outra condição clínica ou patológica específica e tem risco aumentado de se transformar em câncer. O seu diagnóstico é, portanto, dependente da exclusão de outras lesões brancas, como líquen plano, queratose friccional e estomatite nicotínica. A leucoplasia resulta do espessamento da camada de queratina ou acantose, que oculta a vascularização normal. Embora não seja um diagnóstico histopatológico específico, é considerada uma lesão potencialmente maligna, com risco aumentado de transformação maligna. Sua causa não é bem estabelecida, mas o tabagismo e etilismo são os principais fatores de risco (NEVILLE et al., 2016)."
+                }
+            ]
+        },
+        {
+            "tipo": "secao",
+            "titulo": "Características Histopatológicas",
+            "texto":[ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "Microscopicamente, a leucoplasia se caracteriza por espessamento da camada de queratina (hiperqueratose), com ou sem aumento da camada espinhosa (acantose). Pode apresentar hiperqueratose com atrofia epitelial e infiltrado inflamatório crônico no tecido subjacente. A queratina pode ser paraqueratina (sem camada granular e com núcleos retidos) ou ortoqueratina (com camada granular e sem núcleos). A leucoplasia verrucosa tem projeções papilares e pode ser difícil de distinguir de um carcinoma verrucoso inicial. Nos estágios iniciais, parece uma hiperqueratose comum, mas pode progredir para uma proliferação papilar que pode ser indistinguível do carcinoma verrucoso ou, em estágios finais, de carcinoma epidermóide. A displasia epitelial ou carcinoma é encontrada em 5% a 25% das leucoplasias orais, começando nas camadas basais e podendo se estender por toda a espessura do epitélio. Quanto maior o nível de displasia epitelial, maior a chance das atipias se estenderem por toda a espessura do epitélio (NEVILLE et al., 2016)."
+                },
+                {
+                    "tipo": "texto",
+                    "conteudo": "As alterações histopatológicas das células epiteliais displásicas podem incluir:"
+                },
+                {
+                    "tipo": "lista",
+                    "conteudo": [
+                        "Núcleos e células aumentados.",
+                        "Nucléolos grandes e proeminentes.",
+                        "Aumento da relação núcleo-citoplasma.",
+                        "Hipercromatismo (coloração escura excessiva dos núcleos).",
+                        "Núcleos e células pleomórficas (forma anormal).",
+                        "Disqueratose (queratinização prematura individual das células).", 
+                        "Aumento da atividade mitótica (número excessivo de mitoses).",
+                        "Figuras de mitose anormais (mitoses tripolares ou em forma de estrela ou figuras mitóticas acima da camada basal)."
+                    ]
+                },
+                {
+                    "tipo": "texto",
+                    "conteudo": "Além disso, alterações histomorfológicas do epitélio displásico são evidentes em menor aumento, incluindo os seguintes:"
+                },
+                {
+                    "tipo": "lista",
+                    "conteudo": [
+                        "Cristas epiteliais bulbosas ou em forma de lágrima.",
+                        "Perda de polaridade (falta de maturação progressiva para a superfície).",
+                        "Pérolas de queratina (coleções focais, redondas e concêntricas de células queratinizadas).",
+                        "Perda de coesão típica das células epiteliais."
+                    ]
+                },
+                {
+                    "tipo": "texto",
+                    "conteudo": "O grau de displasia epitelial reflete a intensidade das alterações no epitélio:"
+                },
+                {
+                    "tipo": "lista",
+                    "conteudo": [
+                        "Displasia epitelial leve: alterações limitadas às camadas basal e parabasal.",
+                        "Displasia epitelial moderada: envolvimento da camada basal até a porção média da camada espinhosa.",
+                        "Displasia epitelial intensa: alterações que vão da camada basal até acima do ponto médio do epitélio"
+                    ]
+                }
+            ]
+        }
+    ]
+}

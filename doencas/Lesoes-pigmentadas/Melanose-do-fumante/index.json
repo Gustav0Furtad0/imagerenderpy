@@ -1,0 +1,38 @@
+{
+    "doenca": "MELANOSE DO FUMANTE",
+    "imagens": [
+        {   
+            "titulo": "Fotomicrografia 1",
+            "arquivo": ["Melanose-do-fumante-1.png", "Melanose-do-fumante-1-p.png"],
+            "legenda": {
+                "00ff00": "Camada de queratina.",
+                "a200ff": "Tecido epitelial pavimentoso estratificado hiperortoqueratinizado.",
+                "9d7658": "Pigmentação de melanina impregnada no citoplasma dos queratinócitos",
+                "ffba00": "Tecido conjuntivo denso."
+            },
+            "titulo-visivel": "Fotomicrografia 1: maior aumento"
+        }
+    ],
+    "conteudo": [
+        {
+            "tipo": "secao",
+            "titulo": "Introdução",
+            "texto": [ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "Melanose do fumante é uma condição caracterizada pelo aumento da pigmentação melânica na mucosa oral de pessoas que fumam cigarros regularmente. Essa condição resulta da exposição crônica dos melanócitos, células responsáveis pela produção de melanina, pela exposição aos produtos químicos presentes no fumo de tabaco (NEVILLE et al., 2016). A melanina na pele protege contra danos causados pela radiação ultravioleta e, em áreas não expostas ao sol, também se liga a substâncias nocivas. A exposição a aminas policíclicas, como nicotina e benzopirenos, presentes no tabaco, estimula a produção de melanina pelos melanócitos, que têm uma forte ligação com a nicotina. Assim, a produção de melanina na mucosa oral dos tabagistas pode servir como uma resposta protetora contra as substâncias prejudiciais do fumo de tabaco (HEDIN e LARSSON, 1984)."
+                }
+            ]
+        },
+        {
+            "tipo": "secao",
+            "titulo": "Características Histopatológicas",
+            "texto":[ 
+                {
+                    "tipo": "texto",
+                    "conteudo": "A histopatologia da melanose do fumante mostra um aumento da pigmentação de melanina na camada basal do epitélio, semelhante ao que é observado em máculas melanóticas. Além disso, pode ser possível identificar depósitos de melanina dispersos no tecido conjuntivo superficial, assim como a presença de melanófagos (NEVILLE et al., 2016)."
+                }
+            ]
+        }
+    ]
+}

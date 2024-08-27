@@ -12,7 +12,6 @@ port = int(os.environ.get('PORT', 5000))
 app = Flask(__name__, static_url_path='', static_folder='static', template_folder='templates')
 CORS(app)
 
-# Rotas para páginas HTML
 @app.route('/')
 def index():
     return render_template('pages/index.html')
@@ -75,12 +74,13 @@ def doencas():
                 with open(imagem2_caminho, 'rb') as f2:
                     imagem1_base64 = base64.b64encode(f1.read()).decode('utf-8')
                     imagem2_base64 = base64.b64encode(f2.read()).decode('utf-8')
-                    imagens_base64.append([imagem1_base64, imagem2_base64])
+                    imagens_base64.append([imagem1_base64, imagem2_base64, imagem.get('titulo-visivel', ''), imagem.get('fonte', '')])
+                    
+        print(imagens_base64)
         
     
     return render_template('pages/doenca.html', doenca=doenca, imagens_base64=imagens_base64)
 
-# Rotas para dados
 @app.route('/api/get-categorias')
 def get_categoria():
     grupos = []
@@ -112,11 +112,10 @@ def enviar():
         if 'arquivo' in request.files:
             arquivo_zip = request.files['arquivo']
             if arquivo_zip.filename != '':
-                # Salva o arquivo zip no servidor
                 caminho_arquivo = os.path.join('uploads', arquivo_zip.filename)
                 arquivo_zip.save(caminho_arquivo)
                 return f'Arquivo {arquivo_zip.filename} enviado com sucesso!'    
-    return render_template('enviar.html')  # Adicione um formulário HTML para enviar arquivos
+    return render_template('enviar.html')
 
 @app.route('/download')
 def download():
@@ -125,11 +124,9 @@ def download():
         erro = 'Senha incorreta!'
         return erro
     with zipfile.ZipFile('download.zip', 'w') as zipf:
-        # Adiciona arquivos de exemplo ao arquivo zip
         zipf.write('example_file.txt', arcname='example_file.txt')
         zipf.write('another_file.txt', arcname='another_file.txt')
 
-    # Envia o arquivo zip para download
     return send_file('download.zip', as_attachment=True)
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ header {
     width: 100%;
     height: 110px;
     flex-shrink: 0;
-    background-color: #3F2065;
+    background: url("/images/header.png");
     backdrop-filter: blur(2px);
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,26 @@ header .menu ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.logolink {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.headerbarvert {
+    border: 1px solid #FFFFFF;
+    height: 62px;
+    width: 0px;
+}
+
+.headerlogotext {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 900;
+    max-width: 300px;
+    text-align: left;
 }
 
 /* smartphone*/

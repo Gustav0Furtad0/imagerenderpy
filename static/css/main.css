@@ -54,15 +54,32 @@ main {
     align-items: start;
 }
 
-.conteudo-container .texto {
-    width: 100%;
-    display: block;
-}
-
 .conteudo-container p {
     font-size: 1rem;
     font-weight: 400;
+    margin: 5px 0;
+    text-align: justify;
     color: var(--Texto-primario, #000000);
+}
+
+.sessao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sessao-titulo {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.sessao-titulo:first-child {
+    margin-bottom: 0 0 0 25px;
+}
+
+.sessao-lista {
+    margin: 10px 0 10px 45px;
 }
 
 .conteudo-container .imagem {
@@ -105,12 +122,34 @@ main {
     flex-direction: row;
     margin-bottom: 50px;
     flex-wrap: wrap;
-}
+    gap: 10px;
+}   
 
 .integrante .imagem {
     width: 100%;
     display: block;
     max-width: 90px;
+    margin-right: 5px;
+}
+
+.integrante .imagem > img {
+    border-radius: 50%;
+}
+
+.integrante .texto {
+    max-width: 300px;
+}
+
+.integrante .texto > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.border-b {
+    border: 1px rgba(0, 0, 0, 0.418) solid;
 }
 
 .conteudo-left {
@@ -124,7 +163,7 @@ main {
 .conteudo-right {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     flex-direction: column;
 }
@@ -141,14 +180,29 @@ main {
 .patoimage::after {
     content: 'Clique na imagem!';
     position: absolute;
-    bottom: 15px;
+    bottom: 35px;
     right: 15px;
-    background-color: #3F2065; /* Cor de fundo do ícone */
-    color: #fff; /* Cor do texto do ícone */
-    padding: 5px; /* Espaçamento interno do ícone */
-    font-size: 14px; /* Tamanho inicial da fonte do ícone */
+    background-color: #3F2065;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
     cursor: pointer;
-    animation: pulse 1.5s infinite alternate; /* Adiciona animação de pulsação */
+    animation: pulse 1.5s infinite alternate;
+}
+
+.title-overlay {
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+.image-caption {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
 }
 
 @keyframes pulse {
@@ -161,25 +215,16 @@ main {
 }
 
 @media (max-width: 1400px) {
-    .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .imagem {
         width: 100%;
         max-width: 600px;
         justify-content: center;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .conteudo-container {
         grid-template-columns: 1fr;
-    }
-
-    .integrante {
-        flex-direction: column;
     }
 
     .conteudo-left {
